@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Configuration Condition=" '$(Configuration)' == '' ">Mac - Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00B346AF-7073-4943-9C7B-2568713B9247}</ProjectGuid>
+    <ProjectGuid>{45394F8D-236D-45F8-A79A-E86CA8C5D9F1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>UnityAudioMIDIKit</RootNamespace>
-    <AssemblyName>UnityAudioMIDIKit</AssemblyName>
+    <AssemblyName>UnityAudioMIDIKit_Mac</AssemblyName>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Mac - Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <OutputPath>bin\Mac - Debug</OutputPath>
+    <DefineConstants>DEBUG; MACOSX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Mac - Release|AnyCPU' ">
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>bin\Mac - Release</OutputPath>
+    <DefineConstants>MACOSX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -29,17 +30,17 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="AudioService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UnityAudioMIDIKit.Platform.Mac\UnityAudioMIDIKit.Platform.Mac.csproj">
-      <Project>{AB09A49F-AA46-41DD-B247-2BADA778DD4D}</Project>
-      <Name>UnityAudioMIDIKit.Platform.Mac</Name>
+    <ProjectReference Include="..\UnityAudioMIDIKit.Core\UnityAudioMIDIKit.Core.csproj">
+      <Project>{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}</Project>
+      <Name>UnityAudioMIDIKit.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UnityAudioMIDIKit.Models\UnityAudioMIDIKit.Models.csproj">
-      <Project>{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}</Project>
-      <Name>UnityAudioMIDIKit.Models</Name>
+    <ProjectReference Include="..\UnityAudioMIDIKit.Core.Mac\UnityAudioMIDIKit.Core.Mac.csproj">
+      <Project>{AB09A49F-AA46-41DD-B247-2BADA778DD4D}</Project>
+      <Name>UnityAudioMIDIKit.Core.Mac</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

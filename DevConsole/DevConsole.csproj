@@ -13,17 +13,20 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG; MACOS;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>MACOS;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -33,17 +36,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UnityAudioMIDIKit.Platform.Mac\UnityAudioMIDIKit.Platform.Mac.csproj">
+    <ProjectReference Include="..\UnityAudioMIDIKit.Core.Mac\UnityAudioMIDIKit.Core.Mac.csproj">
       <Project>{AB09A49F-AA46-41DD-B247-2BADA778DD4D}</Project>
-      <Name>UnityAudioMIDIKit.Platform.Mac</Name>
+      <Name>UnityAudioMIDIKit.Core.Mac</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UnityAudioMIDIKit.Platform\UnityAudioMIDIKit.Platform.csproj">
+    <ProjectReference Include="..\UnityAudioMIDIKit.Core\UnityAudioMIDIKit.Core.csproj">
       <Project>{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}</Project>
-      <Name>UnityAudioMIDIKit.Platform</Name>
+      <Name>UnityAudioMIDIKit.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UnityAudioMIDIKit.Models\UnityAudioMIDIKit.Models.csproj">
-      <Project>{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}</Project>
-      <Name>UnityAudioMIDIKit.Models</Name>
+    <ProjectReference Include="..\UnityAudioMIDIKit\UnityAudioMIDIKit.csproj">
+      <Project>{45394F8D-236D-45F8-A79A-E86CA8C5D9F1}</Project>
+      <Name>UnityAudioMIDIKit</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

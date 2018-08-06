@@ -1,6 +1,5 @@
 ﻿using System;
-using UnityAudioMIDIKit.Platform;
-using UnityAudioMIDIKit.Platform.Mac;
+using UnityAudioMIDIKit;
 
 namespace DevConsole
 {
@@ -8,9 +7,7 @@ namespace DevConsole
     {
         public static void Main(string[] args)
         {
-            var systemAudioService = new SystemAudioService();
-
-            var inputDevices = systemAudioService.GatherAudioInputDevices();
+            var inputDevices = AudioService.GatherAudioInputDevices();
 
             foreach (var device in inputDevices)
                 Console.WriteLine("{0}: {1}", device.DeviceID, device.Name);
