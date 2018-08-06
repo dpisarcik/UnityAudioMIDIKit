@@ -1,0 +1,41 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAudioMIDIKit", "UnityAudioMIDIKit\UnityAudioMIDIKit.csproj", "{00B346AF-7073-4943-9C7B-2568713B9247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAudioMIDIKit.Platform", "UnityAudioMIDIKit.Platform\UnityAudioMIDIKit.Platform.csproj", "{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAudioMIDIKit.Platform.Mac", "UnityAudioMIDIKit.Platform.Mac\UnityAudioMIDIKit.Platform.Mac.csproj", "{AB09A49F-AA46-41DD-B247-2BADA778DD4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevConsole", "DevConsole\DevConsole.csproj", "{EBB1D10D-E0D2-4C75-B959-90FE739ADCB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAudioMIDIKit.Models", "UnityAudioMIDIKit.Models\UnityAudioMIDIKit.Models.csproj", "{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00B346AF-7073-4943-9C7B-2568713B9247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B346AF-7073-4943-9C7B-2568713B9247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B346AF-7073-4943-9C7B-2568713B9247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B346AF-7073-4943-9C7B-2568713B9247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6FAD39-9DAD-4684-B987-4C108ADBD12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB09A49F-AA46-41DD-B247-2BADA778DD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB09A49F-AA46-41DD-B247-2BADA778DD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB09A49F-AA46-41DD-B247-2BADA778DD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB09A49F-AA46-41DD-B247-2BADA778DD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB1D10D-E0D2-4C75-B959-90FE739ADCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB1D10D-E0D2-4C75-B959-90FE739ADCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB1D10D-E0D2-4C75-B959-90FE739ADCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB1D10D-E0D2-4C75-B959-90FE739ADCB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8464F71A-9DBC-406C-8EDD-7AC4C3186B13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
