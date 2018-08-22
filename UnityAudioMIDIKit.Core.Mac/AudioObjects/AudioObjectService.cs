@@ -14,9 +14,6 @@ namespace UnityAudioMIDIKit.Core.Mac.AudioObjects
 {
     internal class AudioObjectService
     {
-        public const string AudioUnitLibrary = "/System/Library/Frameworks/AudioUnit.framework/AudioUnit";
-
-
         #region Public methods
 
         public TOut GetAudioObjectPropertyDataFixed<TOut>(uint deviceObjectID, AudioObjectPropertySelectorExtended selector, AudioObjectPropertyScope scope, int size)
@@ -74,7 +71,7 @@ namespace UnityAudioMIDIKit.Core.Mac.AudioObjects
 
         #region Native library externs
 
-        [DllImport(AudioUnitLibrary)]
+        [DllImport(InteropHelper.AudioUnitLibrary)]
         private static extern int AudioObjectGetPropertyData(
             uint inObjectID,
             ref AudioObjectPropertyAddress inAddress,
@@ -84,7 +81,7 @@ namespace UnityAudioMIDIKit.Core.Mac.AudioObjects
             IntPtr outDataPtr
         );
 
-        [DllImport(AudioUnitLibrary)]
+        [DllImport(InteropHelper.AudioUnitLibrary)]
         private static extern int AudioObjectGetPropertyDataSize(
             uint inObjectID,
             ref AudioObjectPropertyAddress inAddress,

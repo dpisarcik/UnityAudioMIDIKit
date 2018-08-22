@@ -53,9 +53,9 @@
     <Folder Include="Resources\" />
     <Folder Include="AudioObjects\" />
     <Folder Include="AudioUnits\" />
+    <Folder Include="AudioDevices\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SystemAudioService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AudioObjects\AudioObjectService.cs" />
     <Compile Include="AudioObjects\AudioObjectPropertyAddress.cs" />
@@ -63,6 +63,14 @@
     <Compile Include="AudioObjects\AudioObjectConstants.cs" />
     <Compile Include="AudioUnits\AudioUnitDevice.cs" />
     <Compile Include="AudioInputDevice.cs" />
+    <Compile Include="ErrorHandler.cs" />
+    <Compile Include="SystemAudioService.cs" />
+    <Compile Include="AudioUnits\Constants.cs" />
+    <Compile Include="SystemAudioInputBuffer.cs" />
+    <Compile Include="RingBuffer.cs" />
+    <Compile Include="InteropHelper.cs" />
+    <Compile Include="AudioDevices\Enums.cs" />
+    <Compile Include="AudioUnits\AudioUnitService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UnityAudioMIDIKit.Core\UnityAudioMIDIKit.Core.csproj">

@@ -17,6 +17,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>cp "/Library/Frameworks/Xamarin.Mac.framework/Versions/Current/lib/libxammac.dylib" "${TargetDir}/libxammac.dylib"</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Mac - Release|AnyCPU' ">
     <Optimize>true</Optimize>

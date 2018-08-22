@@ -27,6 +27,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ISystemAudioService.cs" />
     <Compile Include="Models\IAudioInputDevice.cs" />
+    <Compile Include="SystemAudioServiceBase.cs" />
+    <Compile Include="AudioInputBufferRegistry.cs" />
+    <Compile Include="IAudioInputBufferRegistry.cs" />
+    <Compile Include="Models\IAudioInputBuffer.cs" />
+    <Compile Include="Models\SystemAudioInputBufferBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
